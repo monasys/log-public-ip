@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# Set the path to the source directory and log file
+# Set the full path to both the source directory and log file
+# SOURCE_DIR="/home/user/ip_logs/"
+# LOG_FILE="/home/user/ip_logs/ip_address.log"
+
 SOURCE_DIR=
 LOG_FILE=
 
@@ -24,7 +27,7 @@ IPv4=$(curl -s -4 --proto =https https://ifconfig.me/ip)
 
 # Log the IP addresses along with the timestamp
 # This creates the file if it doesn't already exist; if the file exists, it will append to it
-echo "$TIMESTAMP : $IPv6 - $IPv4 " >> $LOG_FILE
+echo "$TIMESTAMP : $IPv6 - $IPv4" >> $LOG_FILE
 
 # Set applicable permissions
 if [ -f $LOG_FILE ]; then

@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# Set the path to the source directory, destination directory and log file
+# Set the full path to the source directory, destination directory and log file
+# SOURCE_DIR="/home/user/ip_logs/"
+# DEST_DIR="/media/usb/storage/ip_logs/"
+# LOG_FILE="/home/user/ip_logs/ip_address.log"
+
 SOURCE_DIR=
 DEST_DIR=
 LOG_FILE=
